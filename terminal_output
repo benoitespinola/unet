@@ -1,0 +1,297 @@
+2023-11-01 14:28:23.002740: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-11-01 14:28:24.530693: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-11-01 14:28:27.095139: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-11-01 14:28:34.240756: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:268] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+Loading data
+Data Tensor 1 (u10) Shape: (736, 128, 64)
+Data Tensor 2 (v10) Shape: (736, 128, 64)
+Data Tensor 3 (d2m) Shape: (736, 128, 64)
+Data Tensor 4 (t2m) Shape: (736, 128, 64)
+Data Tensor 5 (msl) Shape: (736, 128, 64)
+Data Tensor 6 (msr) Shape: (736, 128, 64)
+Data Tensor 7 (msdwlwrf) Shape: (736, 128, 64)
+Data Tensor 8 (msdwswrf) Shape: (736, 128, 64)
+Data Tensor 9 (mtpr) Shape: (736, 128, 64)
+Data Tensor 10 (sp) Shape: (736, 128, 64)
+Data Tensor 11 (tp) Shape: (736, 128, 64)
+Data Tensor 12 (u10_mean_6h) Shape: (736, 128, 64)
+Data Tensor 13 (u10_median_6h) Shape: (736, 128, 64)
+Data Tensor 14 (u10_max_6h) Shape: (736, 128, 64)
+Data Tensor 15 (u10_min_6h) Shape: (736, 128, 64)
+Data Tensor 16 (u10_std_6h) Shape: (736, 128, 64)
+Data Tensor 17 (u10_sum_6h) Shape: (736, 128, 64)
+Data Tensor 18 (v10_mean_6h) Shape: (736, 128, 64)
+Data Tensor 19 (v10_median_6h) Shape: (736, 128, 64)
+Data Tensor 20 (v10_max_6h) Shape: (736, 128, 64)
+Data Tensor 21 (v10_min_6h) Shape: (736, 128, 64)
+Data Tensor 22 (v10_std_6h) Shape: (736, 128, 64)
+Data Tensor 23 (v10_sum_6h) Shape: (736, 128, 64)
+Data Tensor 24 (d2m_mean_6h) Shape: (736, 128, 64)
+Data Tensor 25 (d2m_median_6h) Shape: (736, 128, 64)
+Data Tensor 26 (d2m_max_6h) Shape: (736, 128, 64)
+Data Tensor 27 (d2m_min_6h) Shape: (736, 128, 64)
+Data Tensor 28 (d2m_std_6h) Shape: (736, 128, 64)
+Data Tensor 29 (d2m_sum_6h) Shape: (736, 128, 64)
+Data Tensor 30 (t2m_mean_6h) Shape: (736, 128, 64)
+Data Tensor 31 (t2m_median_6h) Shape: (736, 128, 64)
+Data Tensor 32 (t2m_max_6h) Shape: (736, 128, 64)
+Data Tensor 33 (t2m_min_6h) Shape: (736, 128, 64)
+Data Tensor 34 (t2m_std_6h) Shape: (736, 128, 64)
+Data Tensor 35 (t2m_sum_6h) Shape: (736, 128, 64)
+Data Tensor 36 (msl_mean_6h) Shape: (736, 128, 64)
+Data Tensor 37 (msl_median_6h) Shape: (736, 128, 64)
+Data Tensor 38 (msl_max_6h) Shape: (736, 128, 64)
+Data Tensor 39 (msl_min_6h) Shape: (736, 128, 64)
+Data Tensor 40 (msl_std_6h) Shape: (736, 128, 64)
+Data Tensor 41 (msl_sum_6h) Shape: (736, 128, 64)
+Data Tensor 42 (msr_mean_6h) Shape: (736, 128, 64)
+Data Tensor 43 (msr_median_6h) Shape: (736, 128, 64)
+Data Tensor 44 (msr_max_6h) Shape: (736, 128, 64)
+Data Tensor 45 (msr_min_6h) Shape: (736, 128, 64)
+Data Tensor 46 (msr_std_6h) Shape: (736, 128, 64)
+Data Tensor 47 (msr_sum_6h) Shape: (736, 128, 64)
+Data Tensor 48 (msdwlwrf_mean_6h) Shape: (736, 128, 64)
+Data Tensor 49 (msdwlwrf_median_6h) Shape: (736, 128, 64)
+Data Tensor 50 (msdwlwrf_max_6h) Shape: (736, 128, 64)
+Data Tensor 51 (msdwlwrf_min_6h) Shape: (736, 128, 64)
+Data Tensor 52 (msdwlwrf_std_6h) Shape: (736, 128, 64)
+Data Tensor 53 (msdwlwrf_sum_6h) Shape: (736, 128, 64)
+Data Tensor 54 (msdwswrf_mean_6h) Shape: (736, 128, 64)
+Data Tensor 55 (msdwswrf_median_6h) Shape: (736, 128, 64)
+Data Tensor 56 (msdwswrf_max_6h) Shape: (736, 128, 64)
+Data Tensor 57 (msdwswrf_min_6h) Shape: (736, 128, 64)
+Data Tensor 58 (msdwswrf_std_6h) Shape: (736, 128, 64)
+Data Tensor 59 (msdwswrf_sum_6h) Shape: (736, 128, 64)
+Data Tensor 60 (mtpr_mean_6h) Shape: (736, 128, 64)
+Data Tensor 61 (mtpr_median_6h) Shape: (736, 128, 64)
+Data Tensor 62 (mtpr_max_6h) Shape: (736, 128, 64)
+Data Tensor 63 (mtpr_min_6h) Shape: (736, 128, 64)
+Data Tensor 64 (mtpr_std_6h) Shape: (736, 128, 64)
+Data Tensor 65 (mtpr_sum_6h) Shape: (736, 128, 64)
+Data Tensor 66 (sp_mean_6h) Shape: (736, 128, 64)
+Data Tensor 67 (sp_median_6h) Shape: (736, 128, 64)
+Data Tensor 68 (sp_max_6h) Shape: (736, 128, 64)
+Data Tensor 69 (sp_min_6h) Shape: (736, 128, 64)
+Data Tensor 70 (sp_std_6h) Shape: (736, 128, 64)
+Data Tensor 71 (sp_sum_6h) Shape: (736, 128, 64)
+Data Tensor 72 (t2m_24h) Shape: (736, 128, 64)
+Data Tensor 73 (t2m_7d) Shape: (736, 128, 64)
+Data Tensor 74 (is_winter_t) Shape: (736, 128, 64)
+Data Tensor 75 (is_transition_t) Shape: (736, 128, 64)
+Data Tensor 76 (is_summer_t) Shape: (736, 128, 64)
+Data Tensor 77 (is_winter_by_date) Shape: (736, 128, 64)
+Data Tensor 78 (is_spring_by_date) Shape: (736, 128, 64)
+Data Tensor 79 (is_summer_by_date) Shape: (736, 128, 64)
+Data Tensor 80 (is_autumn_by_date) Shape: (736, 128, 64)
+Data Tensor 81 (w_speed_2) Shape: (736, 128, 64)
+Data Tensor 82 (w_speed_2_mean_6h) Shape: (736, 128, 64)
+Data Tensor 83 (w_speed_2_median_6h) Shape: (736, 128, 64)
+Data Tensor 84 (w_speed_2_max_6h) Shape: (736, 128, 64)
+Data Tensor 85 (w_speed_2_min_6h) Shape: (736, 128, 64)
+Data Tensor 86 (w_speed_2_std_6h) Shape: (736, 128, 64)
+Data Tensor 87 (w_speed_2_sum_6h) Shape: (736, 128, 64)
+Data Tensor 88 (msdwlwrf_1_4) Shape: (736, 128, 64)
+Data Tensor 89 (msdwswrf_1_4) Shape: (736, 128, 64)
+Data Tensor 90 (t_2m_over_w_speed_2) Shape: (736, 128, 64)
+Data Tensor 91 (w_speed_2_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 92 (w_speed_2_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 93 (w_speed_2_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 94 (w_speed_2_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 95 (msdwlwrf_1_4_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 96 (msdwlwrf_1_4_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 97 (msdwlwrf_1_4_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 98 (msdwlwrf_1_4_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 99 (msdwswrf_1_4_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 100 (msdwswrf_1_4_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 101 (msdwswrf_1_4_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 102 (msdwswrf_1_4_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 103 (t_2m_over_w_speed_2_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 104 (t_2m_over_w_speed_2_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 105 (t_2m_over_w_speed_2_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 106 (t_2m_over_w_speed_2_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 107 (t2m_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 108 (t2m_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 109 (t2m_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 110 (t2m_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 111 (msdwlwrf_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 112 (msdwlwrf_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 113 (msdwlwrf_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 114 (msdwlwrf_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 115 (msdwswrf_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 116 (msdwswrf_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 117 (msdwswrf_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 118 (msdwswrf_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 119 (MLD_lag_06_h_00_d) Shape: (736, 128, 64)
+Data Tensor 120 (MLD_lag_00_h_01_d) Shape: (736, 128, 64)
+Data Tensor 121 (MLD_lag_18_h_01_d) Shape: (736, 128, 64)
+Data Tensor 122 (MLD_lag_12_h_02_d) Shape: (736, 128, 64)
+Data Tensor 123 (c_date_ML) Shape: (736, 128, 64)
+Data Tensor 124 (s_date_ML) Shape: (736, 128, 64)
+Data Tensor 125 (c_time_ML) Shape: (736, 128, 64)
+Data Tensor 126 (s_time_ML) Shape: (736, 128, 64)
+Labels Tensor Shape: (736, 128, 64)
+Stacked Tensors Shape: (736, 128, 64, 126)
+----------------
+Dara shape: (736, 128, 64, 126)
+Labels shape: (736, 128, 64)
+Bathy shape: (736, 128, 64)
+----------------
+##########
+Training data shape: (608, 128, 64, 126)
+Training labels shape: (608, 128, 64)
+Training bathy shape: (608, 128, 64)
+-----
+Validation data shape: (0, 128, 64, 126)
+Validation labels shape: (0, 128, 64)
+Validation bathy shape: (0, 128, 64)
+-----
+Test data shape: (672, 128, 64, 126)
+Test labels shape: (672, 128, 64)
+Test bathy shape: (672, 128, 64)
+##########
+##########
+
+
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                Output Shape                 Param #   Connected to                  
+==================================================================================================
+ input_1 (InputLayer)        [(None, 608, 128, 64, 126)   0         []                            
+                             ]                                                                    
+                                                                                                  
+ conv3d (Conv3D)             (None, 608, 128, 64, 64)     217792    ['input_1[0][0]']             
+                                                                                                  
+ conv3d_1 (Conv3D)           (None, 608, 128, 64, 64)     110656    ['conv3d[0][0]']              
+                                                                                                  
+ max_pooling3d (MaxPooling3  (None, 304, 64, 32, 64)      0         ['conv3d_1[0][0]']            
+ D)                                                                                               
+                                                                                                  
+ conv3d_2 (Conv3D)           (None, 304, 64, 32, 128)     221312    ['max_pooling3d[0][0]']       
+                                                                                                  
+ conv3d_3 (Conv3D)           (None, 304, 64, 32, 128)     442496    ['conv3d_2[0][0]']            
+                                                                                                  
+ max_pooling3d_1 (MaxPoolin  (None, 152, 32, 16, 128)     0         ['conv3d_3[0][0]']            
+ g3D)                                                                                             
+                                                                                                  
+ conv3d_4 (Conv3D)           (None, 152, 32, 16, 256)     884992    ['max_pooling3d_1[0][0]']     
+                                                                                                  
+ conv3d_5 (Conv3D)           (None, 152, 32, 16, 256)     1769728   ['conv3d_4[0][0]']            
+                                                                                                  
+ max_pooling3d_2 (MaxPoolin  (None, 76, 16, 8, 256)       0         ['conv3d_5[0][0]']            
+ g3D)                                                                                             
+                                                                                                  
+ conv3d_6 (Conv3D)           (None, 76, 16, 8, 512)       3539456   ['max_pooling3d_2[0][0]']     
+                                                                                                  
+ conv3d_7 (Conv3D)           (None, 76, 16, 8, 512)       7078400   ['conv3d_6[0][0]']            
+                                                                                                  
+ dropout (Dropout)           (None, 76, 16, 8, 512)       0         ['conv3d_7[0][0]']            
+                                                                                                  
+ max_pooling3d_3 (MaxPoolin  (None, 38, 8, 4, 512)        0         ['dropout[0][0]']             
+ g3D)                                                                                             
+                                                                                                  
+ conv3d_8 (Conv3D)           (None, 38, 8, 4, 1024)       1415680   ['max_pooling3d_3[0][0]']     
+                                                          0                                       
+                                                                                                  
+ conv3d_9 (Conv3D)           (None, 38, 8, 4, 1024)       2831257   ['conv3d_8[0][0]']            
+                                                          6                                       
+                                                                                                  
+ dropout_1 (Dropout)         (None, 38, 8, 4, 1024)       0         ['conv3d_9[0][0]']            
+                                                                                                  
+ conv3d_transpose (Conv3DTr  (None, 76, 16, 8, 512)       4194816   ['dropout_1[0][0]']           
+ anspose)                                                                                         
+                                                                                                  
+ concatenate (Concatenate)   (None, 76, 16, 8, 1024)      0         ['dropout[0][0]',             
+                                                                     'conv3d_transpose[0][0]']    
+                                                                                                  
+ conv3d_10 (Conv3D)          (None, 76, 16, 8, 512)       1415628   ['concatenate[0][0]']         
+                                                          8                                       
+                                                                                                  
+ conv3d_11 (Conv3D)          (None, 76, 16, 8, 512)       7078400   ['conv3d_10[0][0]']           
+                                                                                                  
+ conv3d_transpose_1 (Conv3D  (None, 152, 32, 16, 256)     1048832   ['conv3d_11[0][0]']           
+ Transpose)                                                                                       
+                                                                                                  
+ concatenate_1 (Concatenate  (None, 152, 32, 16, 512)     0         ['conv3d_5[0][0]',            
+ )                                                                   'conv3d_transpose_1[0][0]']  
+                                                                                                  
+ conv3d_12 (Conv3D)          (None, 152, 32, 16, 256)     3539200   ['concatenate_1[0][0]']       
+                                                                                                  
+ conv3d_13 (Conv3D)          (None, 152, 32, 16, 256)     1769728   ['conv3d_12[0][0]']           
+                                                                                                  
+ conv3d_transpose_2 (Conv3D  (None, 304, 64, 32, 128)     262272    ['conv3d_13[0][0]']           
+ Transpose)                                                                                       
+                                                                                                  
+ concatenate_2 (Concatenate  (None, 304, 64, 32, 256)     0         ['conv3d_3[0][0]',            
+ )                                                                   'conv3d_transpose_2[0][0]']  
+                                                                                                  
+ conv3d_14 (Conv3D)          (None, 304, 64, 32, 128)     884864    ['concatenate_2[0][0]']       
+                                                                                                  
+ conv3d_15 (Conv3D)          (None, 304, 64, 32, 128)     442496    ['conv3d_14[0][0]']           
+                                                                                                  
+ conv3d_transpose_3 (Conv3D  (None, 608, 128, 64, 64)     65600     ['conv3d_15[0][0]']           
+ Transpose)                                                                                       
+                                                                                                  
+ concatenate_3 (Concatenate  (None, 608, 128, 64, 128)    0         ['conv3d_1[0][0]',            
+ )                                                                   'conv3d_transpose_3[0][0]']  
+                                                                                                  
+ conv3d_16 (Conv3D)          (None, 608, 128, 64, 64)     221248    ['concatenate_3[0][0]']       
+                                                                                                  
+ conv3d_17 (Conv3D)          (None, 608, 128, 64, 64)     110656    ['conv3d_16[0][0]']           
+                                                                                                  
+ conv3d_18 (Conv3D)          (None, 608, 128, 64, 1)      65        ['conv3d_17[0][0]']           
+                                                                                                  
+ conv3d_19 (Conv3D)          (None, 551, 128, 64, 1)      59        ['conv3d_18[0][0]']           
+                                                                                                  
+ conv3d_20 (Conv3D)          (None, 494, 128, 64, 1)      59        ['conv3d_19[0][0]']           
+                                                                                                  
+ conv3d_21 (Conv3D)          (None, 437, 128, 64, 1)      59        ['conv3d_20[0][0]']           
+                                                                                                  
+ conv3d_22 (Conv3D)          (None, 380, 128, 64, 1)      59        ['conv3d_21[0][0]']           
+                                                                                                  
+ conv3d_23 (Conv3D)          (None, 323, 128, 64, 1)      59        ['conv3d_22[0][0]']           
+                                                                                                  
+ conv3d_24 (Conv3D)          (None, 266, 128, 64, 1)      59        ['conv3d_23[0][0]']           
+                                                                                                  
+ conv3d_25 (Conv3D)          (None, 209, 128, 64, 1)      59        ['conv3d_24[0][0]']           
+                                                                                                  
+ conv3d_26 (Conv3D)          (None, 152, 128, 64, 1)      59        ['conv3d_25[0][0]']           
+                                                                                                  
+ conv3d_27 (Conv3D)          (None, 95, 128, 64, 1)       59        ['conv3d_26[0][0]']           
+                                                                                                  
+ conv3d_28 (Conv3D)          (None, 38, 128, 64, 1)       59        ['conv3d_27[0][0]']           
+                                                                                                  
+ conv3d_29 (Conv3D)          (None, 28, 128, 64, 1)       12        ['conv3d_28[0][0]']           
+                                                                                                  
+==================================================================================================
+Total params: 90509275 (345.27 MB)
+Trainable params: 90509275 (345.27 MB)
+Non-trainable params: 0 (0.00 Byte)
+__________________________________________________________________________________________________
+Start training
+Epoch 1/10
+Traceback (most recent call last):
+  File "/users/espinola/V2/unet_gpt.py", line 323, in <module>
+    main(
+  File "/users/espinola/V2/unet_gpt.py", line 287, in main
+    history = model.fit(
+  File "/usr/local/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/tmp/espinola/19207012/__autograph_generated_fileeldlz1qe.py", line 15, in tf__train_function
+    retval_ = ag__.converted_call(ag__.ld(step_function), (ag__.ld(self), ag__.ld(iterator)), None, fscope)
+ValueError: in user code:
+
+    File "/usr/local/lib/python3.9/site-packages/keras/src/engine/training.py", line 1338, in train_function  *
+        return step_function(self, iterator)
+    File "/usr/local/lib/python3.9/site-packages/keras/src/engine/training.py", line 1322, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/usr/local/lib/python3.9/site-packages/keras/src/engine/training.py", line 1303, in run_step  **
+        outputs = model.train_step(data)
+    File "/usr/local/lib/python3.9/site-packages/keras/src/engine/training.py", line 1080, in train_step
+        y_pred = self(x, training=True)
+    File "/usr/local/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "/usr/local/lib/python3.9/site-packages/keras/src/engine/input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "model" is incompatible with the layer: expected shape=(None, 608, 128, 64, 126), found shape=(608, 128, 64, 126)
